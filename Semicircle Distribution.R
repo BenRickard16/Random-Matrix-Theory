@@ -10,9 +10,10 @@ x_vals <- seq(-2, 2, length.out = 1000)
 y_vals <- semicircle(x_vals)
 
 # Plot the semicircle
-plot(x_vals, y_vals, type = "l", lwd = 2, col = "red",
+plot(x_vals, y_vals, type = "l", lwd = 5, col = "red",
      xlab = "x", ylab = "Density", main = "Semicircle Distribution",
-     ylim = c(0, 0.5))
+     ylim = c(0, 0.5), bty='n', cex.lab=1.4, cex.main=1.7)
 
 # Add axis lines
 abline(h = 0, v = 0, col = "gray", lty = 2)
+
